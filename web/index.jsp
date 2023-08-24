@@ -33,6 +33,16 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="/assets/img/team/1.jpg" alt="..." />
+                        <h4>D-100 스터디 플래너</h4>
+                        <p class="text-muted">13,900원</p>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i class="fa-solid fa-cart-shopping" style="color: #616161;"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Facebook Profile"><i class="fa-solid fa-magnifying-glass" style="color: #3d3d3d;"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand LinkedIn Profile"><i class="fa-solid fa-share-from-square" style="color: #3d3d3d;"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="team-member">
                         <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." />
                         <h4>너를 응원해 세트</h4>
                         <p class="text-muted">21,800원</p>
