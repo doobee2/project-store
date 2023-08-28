@@ -18,19 +18,25 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="${path }/css/timeline.css" rel="stylesheet" />
-    <link href="${path }/css/styles.css" rel="stylesheet" />
+    <link href="${path }/css/font.css" rel="stylesheet" />
+
+    <c:set var="path" value="<%=request.getContextPath() %>" />
+    <%@ include file="/common.jsp"%>
 </head>
-<body>
+<body id="page-top">
+<!-- Navigation-->
+<div>
+    <%@ include file="/header.jsp"%>
 <!-- About-->
 <section class="page-section" id="about">
-    <div class="container">
+    <div class="timebox">
         <div class="text-center">
             <h2 class="section-heading text-uppercase">About</h2>
             <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
         </div>
         <ul class="timeline">
             <li>
-                <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="..." /></div>
+                <div class="timeline-image"><img class="timeimg" src="assets/img/about/1.jpg" alt="..." /></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
                         <h4>2009-2011</h4>
@@ -40,7 +46,7 @@
                 </div>
             </li>
             <li class="timeline-inverted">
-                <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="..." /></div>
+                <div class="timeline-image"><img class="timeimg" src="assets/img/about/2.jpg" alt="..." /></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
                         <h4>March 2011</h4>
@@ -50,7 +56,7 @@
                 </div>
             </li>
             <li>
-                <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="..." /></div>
+                <div class="timeline-image"><img class="timeimg" src="assets/img/about/3.jpg" alt="..." /></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
                         <h4>December 2015</h4>
@@ -60,7 +66,7 @@
                 </div>
             </li>
             <li class="timeline-inverted">
-                <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="..." /></div>
+                <div class="timeline-image"><img class="timeimg" src="assets/img/about/4.jpg" alt="..." /></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
                         <h4>July 2020</h4>
@@ -83,6 +89,15 @@
         </ul>
     </div>
 </section>
+
+    <%@ include file="/footer.jsp" %>
+</div>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="/js/scripts.js"></script>
+<script src="/js/noupdate.js"></script>
 </body>
 </html>
+
     

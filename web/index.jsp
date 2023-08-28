@@ -13,7 +13,7 @@
 <div>
     <%@ include file="/header.jsp"%>
 
-    <!-- 뜨고 있는 상품-->
+    <!-- 뜨고 있는 상품 -->
     <section class="page-section bg-light" id="team">
         <div class="container">
             <div class="text-center">
@@ -23,8 +23,8 @@
             <div class="row">
                 <div class="col-lg-4">
                     <div class="team-member">
-                        <img class="mx-auto rounded-circle" src="/assets/img/team/1.jpg" alt="..." />
-                        <h4>D-100 스터디 플래너</h4>
+                        <img class="mx-auto rounded-circle" src="/assets/img/stationary/stat01.jpg" alt="..." />
+                        <h4>스누피 스터디 플래너</h4>
                         <p class="text-muted">13,900원</p>
                         <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i class="fa-solid fa-cart-shopping" style="color: #616161;"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Facebook Profile"><i class="fa-solid fa-magnifying-glass" style="color: #3d3d3d;"></i></a>
@@ -33,8 +33,8 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="team-member">
-                        <img class="mx-auto rounded-circle" src="/assets/img/team/1.jpg" alt="..." />
-                        <h4>D-100 스터디 플래너</h4>
+                        <img class="mx-auto rounded-circle" src="/assets/img/stationary/stat04.jpg" alt="..." />
+                        <h4>아이코닉 디데이 캘린더</h4>
                         <p class="text-muted">13,900원</p>
                         <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i class="fa-solid fa-cart-shopping" style="color: #616161;"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Facebook Profile"><i class="fa-solid fa-magnifying-glass" style="color: #3d3d3d;"></i></a>
@@ -43,9 +43,9 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="team-member">
-                        <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." />
-                        <h4>너를 응원해 세트</h4>
-                        <p class="text-muted">21,800원</p>
+                        <img class="mx-auto rounded-circle" src="/assets/img/stationary/stat03.jpg" alt="..." />
+                        <h4>공부 타이머 스톱워치</h4>
+                        <p class="text-muted">11,800원</p>
                         <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i class="fa-solid fa-cart-shopping" style="color: #616161;"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Facebook Profile"><i class="fa-solid fa-magnifying-glass" style="color: #3d3d3d;"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand LinkedIn Profile"><i class="fa-solid fa-share-from-square" style="color: #3d3d3d;"></i></a>
@@ -53,8 +53,8 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="team-member">
-                        <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." />
-                        <h4>빼빼로 만들기 DIY</h4>
+                        <img class="mx-auto rounded-circle" src="/assets/img/stationary/stat06.jpg" alt="..." />
+                        <h4>플라워 책갈피 세트</h4>
                         <p class="text-muted">12,900원</p>
                         <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i class="fa-solid fa-cart-shopping" style="color: #616161;"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Facebook Profile"><i class="fa-solid fa-magnifying-glass" style="color: #3d3d3d;"></i></a>
@@ -69,7 +69,7 @@
         </div>
     </section>
 
-    <!-- Portfolio Grid-->
+    <!-- 베스트 셀러 -->
     <section class="page-section bg-light" id="portfolio">
         <div class="container">
             <div class="text-center">
@@ -84,7 +84,7 @@
                             <div class="portfolio-hover">
                                 <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="/assets/img/portfolio/1.jpg" alt="..." />
+                            <img class="img-fluid" src="/assets/img/book/book_kids1.jpg" alt="..." />
                         </a>
                         <div class="portfolio-caption">
                             <div class="portfolio-caption-heading">Threads</div>
@@ -99,7 +99,7 @@
                             <div class="portfolio-hover">
                                 <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="/assets/img/portfolio/2.jpg" alt="..." />
+                            <img class="img-fluid" src="/assets/img/book/book_kids2.jpg" alt="..." />
                         </a>
                         <div class="portfolio-caption">
                             <div class="portfolio-caption-heading">Explore</div>
@@ -114,11 +114,11 @@
                             <div class="portfolio-hover">
                                 <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="/assets/img/portfolio/3.jpg" alt="..." />
+                            <img class="img-fluid" src="assets/img/book/book_elem1.jpg" alt="..." />
                         </a>
                         <div class="portfolio-caption">
-                            <div class="portfolio-caption-heading">Finish</div>
-                            <div class="portfolio-caption-subheading text-muted">Identity</div>
+                            <div class="portfolio-caption-heading">EBS 만점왕 초등 수학 플러스 5-2(2023)</div>
+                            <div class="portfolio-caption-subheading text-muted">13,050원</div>
                         </div>
                     </div>
                 </div>
@@ -129,11 +129,11 @@
                             <div class="portfolio-hover">
                                 <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="/assets/img/portfolio/4.jpg" alt="..." />
+                            <img class="img-fluid" src="assets/img/book/book_elem2.jpg" alt="..." />
                         </a>
                         <div class="portfolio-caption">
-                            <div class="portfolio-caption-heading">Lines</div>
-                            <div class="portfolio-caption-subheading text-muted">Branding</div>
+                            <div class="portfolio-caption-heading">한끝 초등 사회 5-2(2023)</div>
+                            <div class="portfolio-caption-subheading text-muted">11,700원</div>
                         </div>
                     </div>
                 </div>
@@ -144,11 +144,11 @@
                             <div class="portfolio-hover">
                                 <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="/assets/img/portfolio/5.jpg" alt="..." />
+                            <img class="img-fluid" src="assets/img/book/book_elem3.jpg" alt="..." />
                         </a>
                         <div class="portfolio-caption">
-                            <div class="portfolio-caption-heading">Southwest</div>
-                            <div class="portfolio-caption-subheading text-muted">Website Design</div>
+                            <div class="portfolio-caption-heading">엄마랑은 왜 말이 안 통할까?</div>
+                            <div class="portfolio-caption-subheading text-muted">11,700원</div>
                         </div>
                     </div>
                 </div>
@@ -159,11 +159,41 @@
                             <div class="portfolio-hover">
                                 <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="/assets/img/portfolio/6.jpg" alt="..." />
+                            <img class="img-fluid" src="assets/img/book/book_elem5.jpg" alt="..." />
                         </a>
                         <div class="portfolio-caption">
-                            <div class="portfolio-caption-heading">Window</div>
-                            <div class="portfolio-caption-subheading text-muted">Photography</div>
+                            <div class="portfolio-caption-heading">호랑이 샘이랑 미리 1학년</div>
+                            <div class="portfolio-caption-subheading text-muted">11,700원</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                    <!-- Portfolio item 4-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/book/book_elem4.jpg" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">올백(All 100) 기출문제집 수학 중 1-2 중간범위(2023)</div>
+                            <div class="portfolio-caption-subheading text-muted">천재교육</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                    <!-- Portfolio item 4-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="/assets/img/book/book_high1.jpg" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">기본 수학의 정석 수학(상)</div>
+                            <div class="portfolio-caption-subheading text-muted">15,300원</div>
                         </div>
                     </div>
                 </div>
