@@ -28,7 +28,7 @@
                     </a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">소개</a></li>
-                        <li><a class="dropdown-item" href="timeline.jsp">히스토리</a></li>
+                        <li><a class="dropdown-item" href="timeline.jsp">연혁</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
@@ -38,7 +38,6 @@
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">참고서적</a></li>
                         <li><a class="dropdown-item" href="#">디자인문구</a></li>
-                        <li><a class="dropdown-item" href="#">문구류</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
