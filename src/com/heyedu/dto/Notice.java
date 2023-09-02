@@ -1,60 +1,56 @@
 package com.heyedu.dto;
 
 public class Notice {
-    private int no;
-    private String title;
-    private String content;
-    private String resdate;
-    private int visited;
+  private int no;
+  private String title;
+  private String content;
+  private String regdate;
+  private int visited = 0;
 
-    public int getNo() {
-        return no;
-    }
+  public Notice() {
+  }
 
-    public void setNo(int no) {
-        this.no = no;
-    }
+  public int getNo() {
+    return no;
+  }
 
-    public String getTitle() {
-        return title;
-    }
+  public void setNo(int no) {
+    this.no = no;
+  }
 
-    public void setTitle(String title) {
-        this.title = title;
-    }
+  public String getTitle() {
+    return title;
+  }
 
-    public String getContent() {
-        return content;
-    }
+  public void setTitle(String title) {
+    this.title = title;
+  }
 
-    public void setContent(String content) {
-        this.content = content;
-    }
+  public String getContent() {
+    return content;
+  }
 
-    public String getResdate() {
-        return resdate;
-    }
+  public void setContent(String content) {
+    this.content = content;
+  }
 
-    public void setResdate(String resdate) {
-        this.resdate = resdate;
-    }
+  public String getResdate() {
+    return regdate;
+  }
 
-    public int getVisited() {
-        return visited;
-    }
+  public void setResdate(String regdate) {
+    this.regdate = regdate;
+  }
 
-    public void setVisited(int visited) {
-        this.visited = visited;
-    }
+  public int getVisited() {
+    return visited;
+  }
 
-    @Override
-    public String toString() {
-        return "Notice{" +
-                "no=" + no +
-                ", title='" + title + '\'' +
-                ", content='" + content + '\'' +
-                ", resdate='" + resdate + '\'' +
-                ", visited=" + visited +
-                '}';
-    }
+  public void setVisited(int visited) {
+    this.visited = visited;
+  }
+
+  public Notice(int no, String title, String content, String regdate, int visited) {
+    this.no = no; this.title = title; this.content = content; this.regdate = regdate; this.visited = visited;
+  }
 }

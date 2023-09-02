@@ -1,120 +1,131 @@
 package com.heyedu.dto;
-//배송
+
 public class Delivery {
-    private int dno;	//(auto)배송코드
-    private int sno;    //결제번호
-    private String cid; //고객아이디
-    private String daddr;	//+배송지
-    private String custel;		//+고객연락처
-    private String pcom; //(admin)배송회사
-    private String ptel;	//(admin)배송기사연락처
-    private int pstate;	//(0:배송전,1:배송중,2:도착,3:구매결정)-배송상태
-    private String sdate;
-    private String rdate;
-    private String bcode;	//화물코드
+  private int dno;
+  private int payNo;
+  private String memId;
+  private String name;
+  private String tel;
+  private String address;
 
-    public int getDno() {
-        return dno;
-    }
+  private String dcom;
+  private String dtel;
+  private int state = 0;
+  private String etd;
+  private String eta;
+  private String dcode;
 
-    public void setDno(int dno) {
-        this.dno = dno;
-    }
+  public Delivery() {
+  }
 
-    public String getSdate() {
-        return sdate;
-    }
+  public Delivery(int dno, int payNo, String memId, String name, String tel, String address, String dcom, String dtel, int state, String etd, String eta, String dcode) {
+    this.dno = dno;
+    this.payNo = payNo;
+    this.memId = memId;
+    this.name = name;
+    this.tel = tel;
+    this.address = address;
+    this.dcom = dcom;
+    this.dtel = dtel;
+    this.state = state;
+    this.etd = etd;
+    this.eta = eta;
+    this.dcode = dcode;
+  }
 
-    public void setSdate(String sdate) {
-        this.sdate = sdate;
-    }
+  public int getDno() {
+    return dno;
+  }
 
-    public String getRdate() {
-        return rdate;
-    }
+  public void setDno(int dno) {
+    this.dno = dno;
+  }
 
-    public void setRdate(String rdate) {
-        this.rdate = rdate;
-    }
+  public int getPayNo() {
+    return payNo;
+  }
 
-    public int getSno() {
-        return sno;
-    }
+  public void setPayNo(int payNo) {
+    this.payNo = payNo;
+  }
 
-    public void setSno(int sno) {
-        this.sno = sno;
-    }
+  public String getMemId() {
+    return memId;
+  }
 
-    public String getCid() {
-        return cid;
-    }
+  public void setMemId(String memId) {
+    this.memId = memId;
+  }
 
-    public void setCid(String cid) {
-        this.cid = cid;
-    }
+  public String getName() {
+    return name;
+  }
 
-    public String getDaddr() {
-        return daddr;
-    }
+  public void setName(String name) {
+    this.name = name;
+  }
 
-    public void setDaddr(String daddr) {
-        this.daddr = daddr;
-    }
+  public String getTel() {
+    return tel;
+  }
 
-    public String getCustel() {
-        return custel;
-    }
+  public void setTel(String tel) {
+    this.tel = tel;
+  }
 
-    public void setCustel(String custel) {
-        this.custel = custel;
-    }
+  public String getAddress() {
+    return address;
+  }
 
-    public String getPcom() {
-        return pcom;
-    }
+  public void setAddress(String address) {
+    this.address = address;
+  }
 
-    public void setPcom(String pcom) {
-        this.pcom = pcom;
-    }
+  public String getDcom() {
+    return dcom;
+  }
 
-    public String getPtel() {
-        return ptel;
-    }
+  public void setDcom(String dcom) {
+    this.dcom = dcom;
+  }
 
-    public void setPtel(String ptel) {
-        this.ptel = ptel;
-    }
+  public String getDtel() {
+    return dtel;
+  }
 
-    public int getPstate() {
-        return pstate;
-    }
+  public void setDtel(String dtel) {
+    this.dtel = dtel;
+  }
 
-    public void setPstate(int pstate) {
-        this.pstate = pstate;
-    }
+  public int getState() {
+    return state;
+  }
 
-    public String getBcode() {
-        return bcode;
-    }
+  public void setState(int state) {
+    this.state = state;
+  }
 
-    public void setBcode(String bcode) {
-        this.bcode = bcode;
-    }
+  public String getEtd() {
+    return etd;
+  }
 
-    @Override
-    public String toString() {
-        return "Delivery{" +
-                "dno=" + dno +
-                ", sno=" + sno +
-                ", cid='" + cid + '\'' +
-                ", daddr='" + daddr + '\'' +
-                ", custel='" + custel + '\'' +
-                ", pcom='" + pcom + '\'' +
-                ", ptel='" + ptel + '\'' +
-                ", pstate=" + pstate +
-                ", sdate=" + sdate +
-                ", rdate=" + rdate +
-                ", bcode='" + bcode + '\'' +
-                '}';
-    }
+  public void setEtd(String etd) {
+    this.etd = etd;
+  }
+
+  public String getEta() {
+    return eta;
+  }
+
+  public void setEta(String eta) {
+    this.eta = eta;
+  }
+
+  public String getDcode() {
+    return dcode;
+  }
+
+  public void setDcode(String dcode) {
+    this.dcode = dcode;
+  }
 }

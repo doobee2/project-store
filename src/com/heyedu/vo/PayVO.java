@@ -1,6 +1,6 @@
 package com.heyedu.vo;
 
-import com.gnjBook.dto.*;
+import com.heyedu.dto.*;
 
 public class PayVO {
   private Payment pay;

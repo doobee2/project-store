@@ -1,120 +1,120 @@
 package com.heyedu.dto;
-//상품
+
 public class Product {
-    private int pno;         //상품번호(auto)
-    private String cate;    //카테고리
-    private String prono;   //카테고리번호+상품번호
-    private String pname;   //상품명
-    private String pcomment;    //상품설명
-    private String plist;       //상품목차
-    private int price;          //상품단가
-    private String imgSrc1;     //상품이미지1
-    private String imgSrc2;     //상품이미지2
-    private String imgSrc3;     //상품이미지3
-    private String resdate;     //등록일
+  private int proNo;
+  private String categoryId;
+  private String procategory;
+  private int price = 0;
+  private String title;
+  private String author;
+  private String content;
+  private String img;
+  private String regdate;
+  private String video;
 
-    public int getPno() {
-        return pno;
-    }
 
-    public void setPno(int pno) {
-        this.pno = pno;
-    }
+  public Product() {
+  }
 
-    public String getCate() {
-        return cate;
-    }
+  public Product(int proNo, String categoryId, String procategory, int price, String title, String author, String content, String img, String regdate, String video) {
+    this.proNo = proNo;
+    this.categoryId = categoryId;
+    this.procategory = procategory;
+    this.price = price;
+    this.title = title;
+    this.author = author;
+    this.content = content;
+    this.img = img;
+    this.regdate = regdate;
+    this.video = video;
 
-    public void setCate(String cate) {
-        this.cate = cate;
-    }
+  }
 
-    public String getProno() {
-        return prono;
-    }
+  public int getProNo() {
+    return proNo;
+  }
 
-    public void setProno(String prono) {
-        this.prono = prono;
-    }
+  public void setProNo(int proNo) {
+    this.proNo = proNo;
+  }
 
-    public String getPname() {
-        return pname;
-    }
+  public String getCategoryId() {
+    return categoryId;
+  }
 
-    public void setPname(String pname) {
-        this.pname = pname;
-    }
+  public void setCategoryId(String categoryId) {
+    this.categoryId = categoryId;
+  }
 
-    public String getPcomment() {
-        return pcomment;
-    }
+  public String getProcategory() {
+    return procategory;
+  }
 
-    public void setPcomment(String pcomment) {
-        this.pcomment = pcomment;
-    }
+  public void setProcategory(String procategory) {
+    this.procategory = procategory;
+  }
 
-    public String getPlist() {
-        return plist;
-    }
+  public int getPrice() {
+    return price;
+  }
 
-    public void setPlist(String plist) {
-        this.plist = plist;
-    }
+  public void setPrice(int price) {
+    this.price = price;
+  }
 
-    public int getPrice() {
-        return price;
-    }
+  public String getTitle() {
+    return title;
+  }
 
-    public void setPrice(int price) {
-        this.price = price;
-    }
+  public void setTitle(String title) {
+    this.title = title;
+  }
 
-    public String getImgSrc1() {
-        return imgSrc1;
-    }
+  public String getAuthor() {
+    return author;
+  }
 
-    public void setImgSrc1(String imgSrc1) {
-        this.imgSrc1 = imgSrc1;
-    }
+  public void setAuthor(String author) {
+    this.author = author;
+  }
 
-    public String getImgSrc2() {
-        return imgSrc2;
-    }
+  public String getContent() {
+    return content;
+  }
 
-    public void setImgSrc2(String imgSrc2) {
-        this.imgSrc2 = imgSrc2;
-    }
+  public void setContent(String content) {
+    this.content = content;
+  }
 
-    public String getImgSrc3() {
-        return imgSrc3;
-    }
+  public String getRegdate() {
+    return regdate;
+  }
 
-    public void setImgSrc3(String imgSrc3) {
-        this.imgSrc3 = imgSrc3;
-    }
+  public void setRegdate(String regdate) {
+    this.regdate = regdate;
+  }
 
-    public String getResdate() {
-        return resdate;
-    }
+  public String getImg() { return img; }
 
-    public void setResdate(String resdate) {
-        this.resdate = resdate;
-    }
+  public void setImg(String img) { this.img = img; }
 
-    @Override
-    public String toString() {
-        return "Product{" +
-                "pno=" + pno +
-                ", cate='" + cate + '\'' +
-                ", prono='" + prono + '\'' +
-                ", pname='" + pname + '\'' +
-                ", pcomment='" + pcomment + '\'' +
-                ", plist='" + plist + '\'' +
-                ", price=" + price +
-                ", imgSrc1='" + imgSrc1 + '\'' +
-                ", imgSrc2='" + imgSrc2 + '\'' +
-                ", imgSrc3='" + imgSrc3 + '\'' +
-                ", resdate='" + resdate + '\'' +
-                '}';
-    }
+  public String getVideo() { return video; }
+
+  public void setVideo(String video) {this.video = video; }
+
+  @Override
+  public String toString() {
+    return "Product{" +
+            "proNo=" + proNo +
+            ", categoryId='" + categoryId + '\'' +
+            ", procategory='" + procategory + '\'' +
+            ", price=" + price +
+            ", title='" + title + '\'' +
+            ", author='" + author + '\'' +
+            ", content='" + content + '\'' +
+            ", img='" + img + '\'' +
+            ", regdate='" + regdate + '\'' +
+            ", video='" + video + '\'' +
+            '}';
+  }
 }

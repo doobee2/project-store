@@ -1,50 +1,79 @@
 package com.heyedu.dto;
+import com.heyedu.db.DBC;
+import com.heyedu.db.MariaDBCon;
+import com.heyedu.dto.Category;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Cart {
-    private int cartno;     //카트번호
-    private String cid;     //고객아이디
-    private int pno;        //제품번호
-    private int amount;     //제품수량
+  private int cartNo;
+  private String memId;
+  private int proNo;
+  private int amount;
+  private int price;
+  private String imgsrc1;
 
-    public int getCartno() {
-        return cartno;
-    }
+  public int getPrice() {
+    return price;
+  }
 
-    public void setCartno(int cartno) {
-        this.cartno = cartno;
-    }
+  public void setPrice(int price) {
+    this.price = price;
+  }
 
-    public String getCid() {
-        return cid;
-    }
+  public String getImgsrc1() {
+    return imgsrc1;
+  }
 
-    public void setCid(String cid) {
-        this.cid = cid;
-    }
+  public void setImgsrc1(String imgsrc1) {
+    this.imgsrc1 = imgsrc1;
+  }
 
-    public int getPno() {
-        return pno;
-    }
+  public Cart() {
+  }
 
-    public void setPno(int pno) {
-        this.pno = pno;
-    }
+  public Cart(int cartNo, String memId, int proNo, int amount, int price, String imgsrc1) {
+    this.cartNo = cartNo;
+    this.memId = memId;
+    this.proNo = proNo;
+    this.amount = amount;
+    this.price = price;
+    this.imgsrc1 = imgsrc1;
+  }
 
-    public int getAmount() {
-        return amount;
-    }
+  public int getCartNo() {
+    return cartNo;
+  }
 
-    public void setAmount(int amount) {
-        this.amount = amount;
-    }
+  public void setCartNo(int cartNo) {
+    this.cartNo = cartNo;
+  }
 
-    @Override
-    public String toString() {
-        return "Cart{" +
-                "cartno=" + cartno +
-                ", cid='" + cid + '\'' +
-                ", pno=" + pno +
-                ", amount=" + amount +
-                '}';
-    }
+  public String getMemId() {
+    return memId;
+  }
+
+  public void setMemId(String memId) {
+    this.memId = memId;
+  }
+
+  public int getProNo() {
+    return proNo;
+  }
+
+  public void setProNo(int proNo) {
+    this.proNo = proNo;
+  }
+
+  public int getAmount() {
+    return amount;
+  }
+
+  public void setAmount(int amount) {
+    this.amount = amount;
+  }
 }

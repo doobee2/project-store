@@ -1,100 +1,100 @@
 package com.heyedu.dto;
-//결제
+
 public class Payment {
-    private int sno;	        //(auto)결제번호
-    private String cid;         //고객아이디
-    private int pno;            //상품번호
-    private int amount;         //구매수량
-    private String pmethod;	    //+결제수단
-    private String pcom;		//+결제 대행사
-    private String cnum;		//+결제카드(계좌)번호
-    private int payprice;		//+결제금액
-    private String dno;            //배송코드
+  private int payNo;
+  private String memId;
+  private int proNo;
+  private int payPrice;
+  private int amount = 1;
+  private String method;
+  private String pcom;
+  private String paccount;
+  private int dno;
 
-    public int getSno() {
-        return sno;
-    }
+  public Payment() {
+  }
 
-    public void setSno(int sno) {
-        this.sno = sno;
-    }
+  public Payment(int payNo, String memId, int proNo, int payPrice, int amount, String method, String pcom, String paccount, int dno) {
+    this.payNo = payNo;
+    this.memId = memId;
+    this.proNo = proNo;
+    this.payPrice = payPrice;
+    this.amount = amount;
+    this.method = method;
+    this.pcom = pcom;
+    this.paccount = paccount;
+    this.dno = dno;
+  }
 
-    public int getPno() {
-        return pno;
-    }
+  public int getPayNo() {
+    return payNo;
+  }
 
-    public void setPno(int pno) {
-        this.pno = pno;
-    }
+  public void setPayNo(int payNo) {
+    this.payNo = payNo;
+  }
 
-    public int getAmount() {
-        return amount;
-    }
+  public String getMemId() {
+    return memId;
+  }
 
-    public void setAmount(int amount) {
-        this.amount = amount;
-    }
+  public void setMemId(String memId) {
+    this.memId = memId;
+  }
 
-    public String getDno() {
-        return dno;
-    }
+  public int getProNo() {
+    return proNo;
+  }
 
-    public void setDno(String dno) {
-        this.dno = dno;
-    }
+  public void setProNo(int proNo) {
+    this.proNo = proNo;
+  }
 
-    public String getPmethod() {
-        return pmethod;
-    }
+  public int getPayPrice() {
+    return payPrice;
+  }
 
-    public void setPmethod(String pmethod) {
-        this.pmethod = pmethod;
-    }
+  public void setPayPrice(int payPrice) {
+    this.payPrice = payPrice;
+  }
 
-    public String getPcom() {
-        return pcom;
-    }
+  public int getAmount() {
+    return amount;
+  }
 
-    public void setPcom(String pcom) {
-        this.pcom = pcom;
-    }
+  public void setAmount(int amount) {
+    this.amount = amount;
+  }
 
-    public String getCnum() {
-        return cnum;
-    }
+  public String getMethod() {
+    return method;
+  }
 
-    public void setCnum(String cnum) {
-        this.cnum = cnum;
-    }
+  public void setMethod(String method) {
+    this.method = method;
+  }
 
-    public int getPayprice() {
-        return payprice;
-    }
+  public String getPcom() {
+    return pcom;
+  }
 
-    public void setPayprice(int payprice) {
-        this.payprice = payprice;
-    }
+  public void setPcom(String pcom) {
+    this.pcom = pcom;
+  }
 
-    public String getCid() {
-        return cid;
-    }
+  public String getPaccount() {
+    return paccount;
+  }
 
-    public void setCid(String cid) {
-        this.cid = cid;
-    }
+  public void setPaccount(String paccount) {
+    this.paccount = paccount;
+  }
 
-    @Override
-    public String toString() {
-        return "Payment{" +
-                "sno=" + sno +
-                ", cid='" + cid + '\'' +
-                ", pno=" + pno +
-                ", amount=" + amount +
-                ", pmethod='" + pmethod + '\'' +
-                ", pcom='" + pcom + '\'' +
-                ", cnum='" + cnum + '\'' +
-                ", payprice=" + payprice +
-                ", dno=" + dno +
-                '}';
-    }
+  public int getDno() {
+    return dno;
+  }
+
+  public void setDno(int dno) {
+    this.dno = dno;
+  }
 }

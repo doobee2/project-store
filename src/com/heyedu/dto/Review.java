@@ -1,70 +1,80 @@
 package com.heyedu.dto;
 
 public class Review {
-    private int rno;    //(auto)댓글 번호
-    private int sno;
-    private String cid;
-    private String content;
-    private int star;
-    private String resdate;
+  private int rno;
+  private String memId;
+  private int payNo;
+  private int star = 5;
+  private String content;
+  private String regdate;
+  private int proNo;
 
-    public int getRno() {
-        return rno;
-    }
+  public Review() {
+  }
 
-    public void setRno(int rno) {
-        this.rno = rno;
-    }
+  public Review(int rno, String memId, int payNo, int star, String content, String regdate, int proNo) {
+    this.rno = rno;
+    this.memId = memId;
+    this.payNo = payNo;
+    this.star = star;
+    this.content = content;
+    this.regdate = regdate;
+    this.proNo = proNo;
+  }
 
-    public int getSno() {
-        return sno;
-    }
+  public int getRno() {
+    return rno;
+  }
 
-    public void setSno(int sno) {
-        this.sno = sno;
-    }
+  public void setRno(int rno) {
+    this.rno = rno;
+  }
 
-    public String getCid() {
-        return cid;
-    }
+  public String getMemId() {
+    return memId;
+  }
 
-    public void setCid(String cid) {
-        this.cid = cid;
-    }
+  public void setMemId(String memId) {
+    this.memId = memId;
+  }
 
-    public String getContent() {
-        return content;
-    }
+  public int getPayNo() {
+    return payNo;
+  }
 
-    public void setContent(String content) {
-        this.content = content;
-    }
+  public void setPayNo(int payNo) {
+    this.payNo = payNo;
+  }
 
-    public int getStar() {
-        return star;
-    }
+  public int getStar() {
+    return star;
+  }
 
-    public void setStar(int star) {
-        this.star = star;
-    }
+  public void setStar(int star) {
+    this.star = star;
+  }
 
-    public String getResdate() {
-        return resdate;
-    }
+  public String getContent() {
+    return content;
+  }
 
-    public void setResdate(String resdate) {
-        this.resdate = resdate;
-    }
+  public void setContent(String content) {
+    this.content = content;
+  }
 
-    @Override
-    public String toString() {
-        return "Review{" +
-                "rno=" + rno +
-                ", sno=" + sno +
-                ", cid='" + cid + '\'' +
-                ", content='" + content + '\'' +
-                ", star=" + star +
-                ", resdate='" + resdate + '\'' +
-                '}';
-    }
+  public String getRegdate() {
+    return regdate;
+  }
+
+  public void setRegdate(String regdate) {
+    this.regdate = regdate;
+  }
+
+  public int getProNo() {
+    return proNo;
+  }
+
+  public void setProNo(int proNo) {
+    this.proNo = proNo;
+  }
 }

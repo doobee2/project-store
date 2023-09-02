@@ -1,8 +1,7 @@
 package com.heyedu.controller.notice;
 
 
-import com.gnjBook.dto.Notice;
-import com.gnjBook.model.NoticeDAO;
+import com.heyedu.model.NoticeDAO;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;

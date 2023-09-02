@@ -1,7 +1,7 @@
 package com.heyedu.controller.fileboard;
 
-import com.gnjBook.dto.Fileboard;
-import com.gnjBook.model.FileboardDAO;
+import com.heyedu.dto.Fileboard;
+import com.heyedu.model.FileboardDAO;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;

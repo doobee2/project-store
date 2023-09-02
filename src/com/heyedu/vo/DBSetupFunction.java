@@ -1,7 +1,6 @@
 package com.heyedu.vo;
 
-import com.gnjBook.dto.Member;
-import com.gnjBook.model.MemberDAO;
+import com.heyedu.model.MemberDAO;
 
 public class DBSetupFunction {
   public void addMember(String name, String id, String pw, String email, String tel, String birth, String postcode, String address){

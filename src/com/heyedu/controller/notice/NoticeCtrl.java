@@ -1,7 +1,6 @@
 package com.heyedu.controller.notice;
 
-import com.gnjBook.dto.Notice;
-import com.gnjBook.model.NoticeDAO;
+import com.heyedu.model.NoticeDAO;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -10,6 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+
 @WebServlet("/Notice.do")
 public class NoticeCtrl extends HttpServlet {
   @Override

@@ -1,9 +1,6 @@
 package com.heyedu.vo;
-
-import com.gnjBook.dto.Cart;
-import com.gnjBook.dto.Product;
-
-
+import com.heyedu.dto.Cart;
+import com.heyedu.dto.Product;
 public class CartVO {
   private Cart cart;
   private Product product;
