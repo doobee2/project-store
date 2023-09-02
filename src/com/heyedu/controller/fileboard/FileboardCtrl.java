@@ -1,5 +1,6 @@
 package com.heyedu.controller.fileboard;
 
+import com.heyedu.dto.Fileboard;
 import com.heyedu.model.FileboardDAO;
 
 import javax.servlet.RequestDispatcher;

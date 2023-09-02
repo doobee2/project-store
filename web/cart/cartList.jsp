@@ -21,7 +21,7 @@
                     <div class="content">
                         <h1 class="page-name">장바구니</h1>
                         <ol class="breadcrumb">
-                            <li><a href="${rootPath }/">Home</a></li>
+                            <li><a href="${path }/">Home</a></li>
                             <li class="active">장바구니</li>
                         </ol>
                     </div>
@@ -32,7 +32,7 @@
     <div class="container contents text-center">
         <div class="d-flex align-content-start flex-wrap">
             <div class="box_wrap">
-                <form action="${rootPath}/CartDelete.do" method="post">
+                <form action="${path}/CartDelete.do" method="post">
                     <table class="table table-bordered" id="tb1">
                         <thead class="thead-light">
                         <tr>
@@ -51,7 +51,7 @@
                                 <td><input type="checkbox" name="cartCheck" value="${cartVO.cart.cartNo}"></td>
                                 <td>${status.count}</td>
                                 <td>${cartVO.product.title}</td>
-                                <td><img src="${rootPath}/storage/${cartVO.product.img}" style="max-width: 50px; max-height: 50px;" alt="대표 이미지"></td>
+                                <td><img src="${path}/storage/${cartVO.product.img}" style="max-width: 50px; max-height: 50px;" alt="대표 이미지"></td>
                                 <td>${cartVO.product.price}</td>
                                 <td>${cartVO.cart.amount}</td>
                                 <td>${cartVO.product.price*cartVO.cart.amount}</td>
@@ -88,11 +88,11 @@
         });
     });
     function deleteButton(){
-        var rootPath = '<%= request.getContextPath() %>'
-        $("form").attr("action", rootPath+"/CartDelete.do");
+        var path = '<%= request.getContextPath() %>'
+        $("form").attr("action", path+"/CartDelete.do");
     }
     function payButton(){
-        var rootPath = '<%= request.getContextPath() %>';
+        var path = '<%= request.getContextPath() %>';
         var selectedCartNos = [];
         $("input[name='cartCheck']:checked").each(function() {
             selectedCartNos.push($(this).val());

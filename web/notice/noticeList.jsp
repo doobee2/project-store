@@ -20,7 +20,7 @@
                     <div class="content">
                         <h1 class="page-name">공지사항</h1>
                         <ol class="breadcrumb">
-                            <li><a href="${rootPath }/">Home</a></li>
+                            <li><a href="${path }/">Home</a></li>
                             <li class="active">공지사항</li>
                         </ol>
                     </div>
@@ -45,7 +45,7 @@
                     <tr>
                         <td class="item1">${status.count}</td>
                         <td class="item2">
-                            <a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="${rootPath }/Notice.do?no=${notice.no}" style="display:inline-block; width:100%;">${notice.title}</a>
+                            <a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="${path }/Notice.do?no=${notice.no}" style="display:inline-block; width:100%;">${notice.title}</a>
                         </td>
                         <td class="item3">${notice.resdate}</td>
                         <td class="item4">${notice.visited}</td>

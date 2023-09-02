@@ -24,7 +24,7 @@
     <h2 class="page_title text-center">오시는 길</h2>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb justify-content-end">
-            <li class="breadcrumb-item"><a href="${rootPath }">Home</a></li>
+            <li class="breadcrumb-item"><a href="${path }">Home</a></li>
             <li class="breadcrumb-item active" aria-current="page">오시는 길</li>
         </ol>
     </nav>

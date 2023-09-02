@@ -20,7 +20,7 @@
                     <div class="content">
                         <h1 class="page-name">학습자료실</h1>
                         <ol class="breadcrumb">
-                            <li><a href="${rootPath }/">Home</a></li>
+                            <li><a href="${path }/">Home</a></li>
                             <li class="active">학습자료실</li>
                         </ol>
                     </div>
@@ -44,7 +44,7 @@
                     <tr>
                         <td class="item1">${status.count}</td>
                         <td class="item2">
-                            <a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="${rootPath }/Fileboard.do?no=${fileboard.no}" style="display:inline-block; width:100%;">${fileboard.title}</a>
+                            <a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="${path }/Fileboard.do?no=${fileboard.no}" style="display:inline-block; width:100%;">${fileboard.title}</a>
                         </td>
                         <td class="item3">${fileboard.regdate}</td>
                         <td class="item4">${fileboard.visited}</td>

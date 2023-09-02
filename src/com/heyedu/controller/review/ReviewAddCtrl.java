@@ -1,5 +1,6 @@
 package com.heyedu.controller.review;
 
+import com.heyedu.dto.Product;
 import com.heyedu.model.ProductDAO;
 
 import javax.servlet.RequestDispatcher;

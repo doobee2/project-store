@@ -20,7 +20,7 @@
                     <div class="content">
                         <h1 class="page-name">답변하기</h1>
                         <ol class="breadcrumb">
-                            <li><a href="${rootPath }/">Home</a></li>
+                            <li><a href="${path }/">Home</a></li>
                             <li class="active">QnA</li>
                         </ol>
                     </div>
@@ -30,7 +30,7 @@
     </section>
     <div style="display: flex; min-height: 80vh;">
         <div class="container" style="margin-top: 20px;">
-            <form action="${rootPath }/QnaAddPro.do" method="post">
+            <form action="${path }/QnaAddPro.do" method="post">
                 <input type="hidden" name="lev" value="${lev }" >
                 <input type="hidden" name="par" value="${par }" >
 
@@ -47,7 +47,7 @@
                 </div>
             </form>
             <div class="btn-group text-right" style="margin:20px 0;">
-                <a class="btn btn-main btn-medium" href="${rootPath }/QnaList.do" role="button">글 목록</a>
+                <a class="btn btn-main btn-medium" href="${path }/QnaList.do" role="button">글 목록</a>
             </div>
         </div>
     </div>

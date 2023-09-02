@@ -21,8 +21,8 @@
                     <div class="content">
                         <h1 class="page-name">리뷰</h1>
                         <ol class="breadcrumb">
-                            <li><a href="${rootPath }/">Home</a></li>
-                            <li><a href="${rootPath }/BookGet.do?proNo=${proNo }">${product.title }</a></li>
+                            <li><a href="${path }/">Home</a></li>
+                            <li><a href="${path }/BookGet.do?proNo=${proNo }">${product.title }</a></li>
                             <li class="active">리뷰</li>
                         </ol>
                     </div>
@@ -31,7 +31,7 @@
         </div>
     </section>
     <div class="container contents text-center">
-        <form action="${rootPath }/ReviewAddPro.do" method="post">
+        <form action="${path }/ReviewAddPro.do" method="post">
             <input type="hidden" value="${proNo}" id="proNo" name="proNo" >
             <table class="table">
                 <thead>
@@ -52,7 +52,7 @@
             </table>
             <button type="submit">리뷰등록</button>
         </form>
-        <a class="btn btn-primary" href="${rootPath }/BookGet.do?proNo=${proNo }" role="button">글 목록</a>
+        <a class="btn btn-primary" href="${path }/BookGet.do?proNo=${proNo }" role="button">글 목록</a>
     </div>
 
     <%@ include file="../footer.jsp" %>

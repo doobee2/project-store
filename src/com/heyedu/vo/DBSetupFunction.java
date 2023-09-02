@@ -1,5 +1,6 @@
 package com.heyedu.vo;
 
+import com.heyedu.dto.Member;
 import com.heyedu.model.MemberDAO;
 
 public class DBSetupFunction {

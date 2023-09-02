@@ -18,7 +18,7 @@
                     <div class="content">
                         <h1 class="page-name">Q & A 수정</h1>
                         <ol class="breadcrumb">
-                            <li><a href="${rootPath }/">Home</a></li>
+                            <li><a href="${path }/">Home</a></li>
                             <li class="active">QnA</li>
                         </ol>
                     </div>
@@ -29,7 +29,7 @@
     <div style="display: flex; min-height: 80vh;">
         <div class="container" style="margin-top: 20px;">
             <c:set var="qna" value="${qna}"/>
-            <form action="${rootPath }/QnaUpdatePro.do" method="post">
+            <form action="${path }/QnaUpdatePro.do" method="post">
                 <input type="hidden" name="no" value="${qna.qno}">
                 <div class="mb-3">
                     <label class="form-label" for="title">제목</label>
@@ -44,7 +44,7 @@
                 </div>
             </form>
             <div class="btn-group text-right" style="margin:20px 0;">
-                <a class="btn btn-main btn-medium" href="${rootPath }/QnaList.do" role="button">글 목록</a>
+                <a class="btn btn-main btn-medium" href="${path }/QnaList.do" role="button">글 목록</a>
             </div>
         </div>
     </div>

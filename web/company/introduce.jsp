@@ -25,7 +25,7 @@
                 <div class="content">
                     <h1 class="page-name">Grow&Joy Book 소개</h1>
                     <ol class="breadcrumb">
-                        <li><a href="${rootPath }/">Home</a></li>
+                        <li><a href="${path }/">Home</a></li>
                         <li class="active">소개</li>
                     </ol>
                 </div>

@@ -19,7 +19,7 @@
                     <div class="content">
                         <h1 class="page-name">학습자료실</h1>
                         <ol class="breadcrumb">
-                            <li><a href="${rootPath }/">Home</a></li>
+                            <li><a href="${path }/">Home</a></li>
                             <li class="active">학습자료실</li>
                         </ol>
                     </div>
@@ -54,16 +54,16 @@
             <tr>
                 <td colspan="3">
                     <c:if test="${!empty fileboard.filename1 }">
-                        <img src="${rootPath }/storage/${fileboard.filename1 }" alt="${fileboard.filename1 }" width="100"/>
-                        <a href="${rootPath }/storage/${fileboard.filename1 }" download ><i class="fa-solid fa-file"></i>${fileboard.filename1 }</a> <br>
+                        <img src="${path }/storage/${fileboard.filename1 }" alt="${fileboard.filename1 }" width="100"/>
+                        <a href="${path }/storage/${fileboard.filename1 }" download ><i class="fa-solid fa-file"></i>${fileboard.filename1 }</a> <br>
                     </c:if>
                     <c:if test="${!empty fileboard.filename2 }">
                         <i class="fa-solid fa-file"></i>
-                        <a href="${rootPath }/storage/${fileboard.filename2 }" download >${fileboard.filename2 }</a><br>
+                        <a href="${path }/storage/${fileboard.filename2 }" download >${fileboard.filename2 }</a><br>
                     </c:if>
                     <c:if test="${!empty fileboard.filename3 }">
-                        <img src="${rootPath }/storage/${fileboard.filename3 }" alt="${fileboard.filename3 }" width="100"/>
-                        <a href="${rootPath }/storage/${fileboard.filename3 }" download >${fileboard.filename3 }</a><br>
+                        <img src="${path }/storage/${fileboard.filename3 }" alt="${fileboard.filename3 }" width="100"/>
+                        <a href="${path }/storage/${fileboard.filename3 }" download >${fileboard.filename3 }</a><br>
 
                     </c:if>
                 </td>

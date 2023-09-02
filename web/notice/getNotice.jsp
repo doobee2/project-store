@@ -19,7 +19,7 @@
                     <div class="content">
                         <h1 class="page-name">공지사항</h1>
                         <ol class="breadcrumb">
-                            <li><a href="${rootPath }/">Home</a></li>
+                            <li><a href="${path }/">Home</a></li>
                             <li class="active">공지사항</li>
                         </ol>
                     </div>

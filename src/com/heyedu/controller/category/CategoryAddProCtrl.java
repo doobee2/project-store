@@ -1,5 +1,6 @@
 package com.heyedu.controller.category;
 
+import com.heyedu.dto.Category;
 import com.heyedu.model.CategoryDAO;
 
 import javax.servlet.ServletException;

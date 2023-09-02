@@ -1,5 +1,6 @@
 package com.heyedu.controller.member;
 
+import com.heyedu.dto.Member;
 import com.heyedu.model.MemberDAO;
 
 import javax.servlet.RequestDispatcher;

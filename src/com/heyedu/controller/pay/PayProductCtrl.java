@@ -1,5 +1,7 @@
 package com.heyedu.controller.pay;
 
+import com.heyedu.dto.Member;
+import com.heyedu.dto.Product;
 import com.heyedu.model.MemberDAO;
 import com.heyedu.model.ProductDAO;
 

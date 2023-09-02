@@ -10,13 +10,12 @@ public class Member {
   private String address;
   private String postcode;
   private String regdate;
-  private int point = 0;
-  private String grade = "F";
+  private int point;
 
   public Member() {
   }
 
-  public Member(String id, String pw, String name, String email, String tel, String birth, String address, String postcode, String regdate, int point, String grade) {
+  public Member(String id, String pw, String name, String email, String tel, String birth, String address, String postcode, String regdate, int point) {
     this.id = id;
     this.pw = pw;
     this.name = name;
@@ -27,7 +26,6 @@ public class Member {
     this.postcode = postcode;
     this.regdate = regdate;
     this.point = point;
-    this.grade = grade;
   }
 
   public String getPostcode() {
@@ -110,11 +108,5 @@ public class Member {
     this.point = point;
   }
 
-  public String getGrade() {
-    return grade;
-  }
 
-  public void setGrade(String grade) {
-    this.grade = grade;
-  }
 }

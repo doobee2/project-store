@@ -12,7 +12,7 @@
     <h2 class="page_title text-center">회원약관</h2>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb justify-content-end">
-            <li class="breadcrumb-item"><a href="${rootPath }">Home</a></li>
+            <li class="breadcrumb-item"><a href="${path }">Home</a></li>
             <li class="breadcrumb-item active" aria-current="page">회원가입</li>
         </ol>
     </nav>
@@ -35,7 +35,7 @@
                 var ck_item2 = document.getElementById("ck_item2");
                 in_btn1.addEventListener("click", function(){
                     if(ck_item1.checked && ck_item2.checked) {
-                        location.href = "${rootPath}/Join.do";
+                        location.href = "${path}/Join.do";
                     } else if(ck_item1.checked || ck_item2.checked){
                         alert("약관에 동의하지 않으셨습니다.");
                     }

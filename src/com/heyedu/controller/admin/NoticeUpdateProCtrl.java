@@ -1,5 +1,6 @@
 package com.heyedu.controller.admin;
 
+import com.heyedu.dto.Notice;
 import com.heyedu.model.NoticeDAO;
 
 import javax.servlet.ServletException;

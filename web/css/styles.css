@@ -977,6 +977,7 @@ progress {
   .col-sm-12 {
     flex: 0 0 auto;
     width: 100%;
+    margin: 0 auto;
   }
   .offset-sm-0 {
     margin-left: 0;
@@ -1121,7 +1122,9 @@ progress {
   }
   .col-md-6 {
     flex: 0 0 auto;
-    width: 50%;
+    margin: 100px auto;
+    width: 25%;
+    text-align: center;
   }
   .col-md-7 {
     flex: 0 0 auto;

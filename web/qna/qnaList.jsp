@@ -19,7 +19,7 @@
                     <div class="content">
                         <h1 class="page-name">Q & A</h1>
                         <ol class="breadcrumb">
-                            <li><a href="${rootPath }/">Home</a></li>
+                            <li><a href="${path }/">Home</a></li>
                             <li class="active">QnA</li>
                         </ol>
                     </div>
@@ -45,10 +45,10 @@
                     <td class="item1">${status.count}</td>
                     <td class="item2">
                         <c:if test="${qna.lev eq 0 }">
-                            <a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="${rootPath }/QnaGet.do?qno=${qna.qno}" style="display:inline-block; width:100%;">${qna.title}</a>
+                            <a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="${path }/QnaGet.do?qno=${qna.qno}" style="display:inline-block; width:100%;">${qna.title}</a>
                         </c:if>
                         <c:if test="${qna.lev ne 0 }">
-                            <a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="${rootPath }/QnaGet.do?qno=${qna.qno}" style="display:inline-block; width:100%; padding-left:28px;">[답변] ${qna.title}</a>
+                            <a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="${path }/QnaGet.do?qno=${qna.qno}" style="display:inline-block; width:100%; padding-left:28px;">[답변] ${qna.title}</a>
                         </c:if>
                     </td>
                     <td class="item3">${qna.author}</td>
@@ -59,7 +59,7 @@
             </tbody>
         </table>
             <c:if test="${!empty sid}">
-                <a class="btn btn-main btn-medium" href="${rootPath }/QnaAdd.do" role="button">글쓰기</a>
+                <a class="btn btn-main btn-medium" href="${path }/QnaAdd.do" role="button">글쓰기</a>
             </c:if>
 
             <nav aria-label="Page navigation example" id="page-nation1">

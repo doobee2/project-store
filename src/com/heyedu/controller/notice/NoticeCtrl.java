@@ -1,5 +1,6 @@
 package com.heyedu.controller.notice;
 
+import com.heyedu.dto.Notice;
 import com.heyedu.model.NoticeDAO;
 
 import javax.servlet.RequestDispatcher;

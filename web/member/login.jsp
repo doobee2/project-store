@@ -7,89 +7,58 @@
 <head>
     <title>로그인</title>
     <%@ include file="../common.jsp" %>
-
-    <style>
-
-        .offset-xl-1 {
-            margin: 50px;
-        }
-
-            .col-xl-4 {
-                flex: 0 0 auto;
-                width: 25%;
-            }
-
-    </style>
 </head>
-<body>
-<%@ include file="../header.jsp" %>
-<section class="vh-100">
-    <div class="container-fluid h-custom">
-        <div class="row d-flex justify-content-center align-items-center h-100">
-            <div class="col-md-9 col-lg-6 col-xl-5">
-                <img src="/assets/img/sub/duckyellow.jpg"
-                     class="img-fluid" alt="Sample image">
-            </div>
-            <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
-                <form>
-                    <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
-                        <p class="lead fw-normal mb-0 me-3">Sign in with</p>
-                        <button type="button" class="btn btn-primary btn-floating mx-1">
-                            <i class="fab fa-facebook-f"></i>
-                        </button>
+<body id="body">
 
-                        <button type="button" class="btn btn-primary btn-floating mx-1">
-                            <i class="fab fa-twitter"></i>
-                        </button>
-
-                        <button type="button" class="btn btn-primary btn-floating mx-1">
-                            <i class="fab fa-linkedin-in"></i>
-                        </button>
-                    </div>
-
-                    <div class="divider d-flex align-items-center my-4">
-                        <p class="text-center fw-bold mx-3 mb-0">Or</p>
-                    </div>
-
-                    <!-- Email input -->
-                    <div class="form-outline mb-4">
-                        <input type="email" id="form3Example3" class="form-control form-control-lg"
-                               placeholder="Enter a valid email address" />
-                        <label class="form-label" for="form3Example3">Email address</label>
-                    </div>
-
-                    <!-- Password input -->
-                    <div class="form-outline mb-3">
-                        <input type="password" id="form3Example4" class="form-control form-control-lg"
-                               placeholder="Enter password" />
-                        <label class="form-label" for="form3Example4">Password</label>
-                    </div>
-
-                    <div class="d-flex justify-content-between align-items-center">
-                        <!-- Checkbox -->
-                        <div class="form-check mb-0">
-                            <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
-                            <label class="form-check-label" for="form2Example3">
-                                Remember me
-                            </label>
+<section class="signin-page account">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="block text-center">
+                    <a class="logo" href="${path }/">그로우앤조이북소개</a>
+                    <h2 class="text-center">로그인</h2>
+                    <form class="text-left clearfix form_row" action="${path}/LoginPro.do" id="login_form" method="post">
+                        <div class="form-group">
+                            <input class="form-control" type="text" name="id" id="id" placeholder="아이디 입력" autofocus required>
                         </div>
-                        <a href="#!" class="text-body">Forgot password?</a>
-                    </div>
-
-                    <div class="text-center text-lg-start mt-4 pt-2">
-                        <button type="button" class="btn btn-primary btn-lg"
-                                style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
-                        <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="#!"
-                                                                                          class="link-danger">Register</a></p>
-                    </div>
-
-                </form>
+                        <div class="form-group">
+                            <input class="form-control" type="password" name="pw" id="pw"  placeholder="패스워드 입력" required>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-main text-center" >로그인</button>
+                        </div>
+                    </form>
+                    <p class="mt-20">회원가입을 하시겠습니까?<a href="${path }/member/term.jsp"> 회원가입</a></p>
+                </div>
             </div>
         </div>
     </div>
-
 </section>
+<%--
+<div class="container contents text-center">
+    <h2 class="page_title text-center">로그인</h2>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb justify-content-end">
+            <li class="breadcrumb-item"><a href="${path }">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Login</li>
+        </ol>
+    </nav>
 
-<%@ include file="../footer.jsp" %>
+    &lt;%&ndash; 로그인 Form   &ndash;%&gt;
+    <form action="${path}/LoginPro.do" id="" class="form_row" method="post">
+        <div class="container justify-content-center" style="max-width: 400px;">
+            <div class="row">
+                <input class="form-control" type="text" name="id" id="id" placeholder="아이디 입력" autofocus required>
+            </div>
+            <div class="row">
+                <input class="form-control" type="password" name="pw" id="pw"  placeholder="패스워드 입력" required>
+            </div>
+            <a href="" style="display: block; text-align: end; font-size: 8px; color: gray; margin-bottom: 20px;">아이디/비밀번호 찾기</a>
+            <input type="submit" value="로그인" class="btn btn-primary mb-3">
+            <a href="${path }/member/term.jsp" class="btn btn-primary mb-3">회원가입</a>
+        </div>
+    </form>
+</div>--%>
+<%@ include file="/commonsub.jsp"%>
 </body>
 </html>

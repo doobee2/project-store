@@ -29,7 +29,7 @@
                     <div class="content">
                         <h1 class="page-name">도서 목록</h1>
                         <ol class="breadcrumb">
-                            <li><a href="${rootPath }/">Home</a></li>
+                            <li><a href="${path }/">Home</a></li>
                             <li class="active">도서</li>
                         </ol>
                     </div>
@@ -41,7 +41,7 @@
     <div class="container contents text-left">
         <div class="row">
             <div class="col-4 product_detail_top img_area">
-                <img class="card-img-top" src="${rootPath}/storage/${product.img }" alt="${product.title }" width="100"/>
+                <img class="card-img-top" src="${path}/storage/${product.img }" alt="${product.title }" width="100"/>
             </div>
             <div class="col-8 product_detail_top detail_area">
                 <form action="" method="post">
@@ -80,7 +80,7 @@
                                     <input type="hidden" name="proNo" value="${product.proNo}">
                                 </c:when>
                                 <c:otherwise>
-                                    <button class="btn btn-main btn-medium" type="button" onclick="location.href='${rootPath}/member/login.jsp'">장바구니</button>
+                                    <button class="btn btn-main btn-medium" type="button" onclick="location.href='${path}/member/login.jsp'">장바구니</button>
                                 </c:otherwise>
                             </c:choose>
                             <input class="btn btn-main btn-medium" type="submit" value="결제하기" onclick="payProduct()">
@@ -101,7 +101,7 @@
         </ul>
         <div class="content" style="">
             <video height="300" width="500" controls >
-                <source src="${rootPath}/storage/${product.video }" type="video/mp4">
+                <source src="${path}/storage/${product.video }" type="video/mp4">
             </video>
             ${product.content}
         </div>
@@ -133,7 +133,7 @@
                             </td>
                             <td>
                                 <c:if test="${sid eq 'admin' || sid eq review.memId}">
-                                    <a href="${rootPath }/ReviewDeletePro.do?rno=${review.rno }">리뷰삭제</a>
+                                    <a href="${path }/ReviewDeletePro.do?rno=${review.rno }">리뷰삭제</a>
                                 </c:if>
                             </td>
                         </tr>
@@ -147,10 +147,10 @@
         </div>
         <hr>
         <div class="text-right" style="margin:20px 0;">
-            <a class="btn btn-main btn-medium" href="${rootPath }/BookList.do?category=*" role="button">글 목록</a>
-            <a class="btn btn-main btn-medium" href="${rootPath }/ReviewAdd.do?proNo=${product.proNo }" role="button">리뷰등록</a>
+            <a class="btn btn-main btn-medium" href="${path }/BookList.do?category=*" role="button">글 목록</a>
+            <a class="btn btn-main btn-medium" href="${path }/ReviewAdd.do?proNo=${product.proNo }" role="button">리뷰등록</a>
             <c:if test="${reviewPass eq true}">
-            <a class="btn btn-main btn-medium" href="${rootPath }/ReviewAdd.do?proNo=${product.proNo }" role="button">리뷰등록</a>
+            <a class="btn btn-main btn-medium" href="${path }/ReviewAdd.do?proNo=${product.proNo }" role="button">리뷰등록</a>
             </c:if>
         </div>
     </div>
@@ -162,9 +162,9 @@
 
 <script>
     function addCart(){
-        $("form").attr("action", "${rootPath}/CartAdd.do?pno=${product.proNo }&imgsrc1=${product.img}&price=${product.price}");
+        $("form").attr("action", "${path}/CartAdd.do?pno=${product.proNo }&imgsrc1=${product.img}&price=${product.price}");
     }
     function payProduct(){
-        $("form").attr("action", "${rootPath}/PayProduct.do");
+        $("form").attr("action", "${path}/PayProduct.do");
     }
 </script>

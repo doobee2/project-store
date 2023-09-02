@@ -10,7 +10,7 @@
     <meta name="author" content="" />
     <title>헤이에듀</title>
     <!-- Favicon-->
-    <link rel="icon" type="${path }/image/x-icon" href="assets/favicon.ico" />
+    <link rel="icon" type="${path }/image/x-icon" href="../assets/favicon.ico" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     <!-- Google fonts-->
@@ -36,7 +36,7 @@
         </div>
         <ul class="timeline">
             <li>
-                <div class="timeline-image"><img class="timeimg" src="assets/img/about/1.jpg" alt="..." /></div>
+                <div class="timeline-image"><img class="timeimg" src="../assets/img/about/1.jpg" alt="..." /></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
                         <h4>2009-2011</h4>
@@ -46,7 +46,7 @@
                 </div>
             </li>
             <li class="timeline-inverted">
-                <div class="timeline-image"><img class="timeimg" src="assets/img/about/2.jpg" alt="..." /></div>
+                <div class="timeline-image"><img class="timeimg" src="../assets/img/about/2.jpg" alt="..." /></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
                         <h4>March 2011</h4>
@@ -56,7 +56,7 @@
                 </div>
             </li>
             <li>
-                <div class="timeline-image"><img class="timeimg" src="assets/img/about/3.jpg" alt="..." /></div>
+                <div class="timeline-image"><img class="timeimg" src="../assets/img/about/3.jpg" alt="..." /></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
                         <h4>December 2015</h4>
@@ -66,7 +66,7 @@
                 </div>
             </li>
             <li class="timeline-inverted">
-                <div class="timeline-image"><img class="timeimg" src="assets/img/about/4.jpg" alt="..." /></div>
+                <div class="timeline-image"><img class="timeimg" src="../assets/img/about/4.jpg" alt="..." /></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
                         <h4>July 2020</h4>

@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
-<c:set var="path1" value="<%=request.getContextPath() %>" />
+<c:set var="path" value="<%=request.getContextPath() %>" />
 <!-- Masthead-->
 <%--<header class="masthead">
     <div class="container">
@@ -27,8 +27,9 @@
                         헤이에듀
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">소개</a></li>
-                        <li><a class="dropdown-item" href="timeline.jsp">연혁</a></li>
+                        <li><a class="dropdown-item" href="${path }/company/introduce.jsp">회사소개</a></li>
+                        <li><a class="dropdown-item" href="${path }/company/timeline.jsp">연혁</a></li>
+                        <li><a class="dropdown-item" href="${path }/company/map.jsp">오시는길</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
@@ -49,10 +50,10 @@
                         고객센터
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">공지사항</a></li>
+                        <li><a class="dropdown-item" href="${path }/NoticeList.do">공지사항</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">묻고답하기</a></li>
-                        <li><a class="dropdown-item" href="/faq.jsp">자주묻는질문</a></li>
+                        <li><a class="dropdown-item" href="${path }/QnaList.do">묻고답하기</a></li>
+                        <li><a class="dropdown-item" href="${path }/FileboardList.do">학습자료실</a></li>
                     </ul>
                 </li>
             </ul>
@@ -61,25 +62,25 @@
         <ul class="nav justify-content-end">
             <c:choose>
                 <c:when test="${empty session_id}">
-                    <li class="nav-item"><a href="${rootPath }/member/login.jsp" class="nav-link">로그인</a></li>
-                    <li class="nav-item"><a href="${rootPath }/member/term.jsp" class="nav-link">회원가입</a></li>
-                    <li class="nav-item"><a href="${rootPath }/member/map.jsp" class="nav-link">오시는 길</a></li>
+                    <li class="nav-item"><a href="${path }/login.jsp" class="nav-link">로그인</a></li>
+                    <li class="nav-item"><a href="${path }/member/term.jsp" class="nav-link">회원가입</a></li>
+                    <li class="nav-item"><a href="${path }/member/map.jsp" class="nav-link">오시는 길</a></li>
                 </c:when>
                 <c:when test="${session_id eq 'admin'}">
-                    <li class="nav-item"><a href="${rootPath }/Logout.do" class="nav-link">로그아웃</a></li>
-                    <li class="nav-item"><a href="${rootPath }/Mypage.do" class="nav-link">내 정보</a></li>
-                    <li class="nav-item"><a href="${rootPath }/MemberListAdmin.do" class="nav-link">관리자</a></li>
+                    <li class="nav-item"><a href="${path }/Logout.do" class="nav-link">로그아웃</a></li>
+                    <li class="nav-item"><a href="${path }/Mypage.do" class="nav-link">내 정보</a></li>
+                    <li class="nav-item"><a href="${path }/MemberListAdmin.do" class="nav-link">관리자</a></li>
                 </c:when>
                 <c:otherwise>
-                    <li class="nav-item"><a href="${rootPath }/Logout.do" class="nav-link">로그아웃</a></li>
-                    <li class="nav-item"><a href="${rootPath }/Mypage.do" class="nav-link">내 정보</a></li>
+                    <li class="nav-item"><a href="${path }/Logout.do" class="nav-link">로그아웃</a></li>
+                    <li class="nav-item"><a href="${path }/Mypage.do" class="nav-link">내 정보</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="${rootPath }/CartList.do" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="${path }/CartList.do" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             장바구니
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="${rootPath }/CartList.do">장바구니</a></li>
-                            <li><a class="dropdown-item" href="${rootPath }/PayList.do">결제 내역</a></li>
+                            <li><a class="dropdown-item" href="${path }/CartList.do">장바구니</a></li>
+                            <li><a class="dropdown-item" href="${path }/PayList.do">결제 내역</a></li>
                         </ul>
                     <li class="nav-item"><a class="nav-link" href="#contact">오시는길</a></li>
                     </li>

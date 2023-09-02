@@ -21,7 +21,7 @@
                     <div class="content">
                         <h1 class="page-name">상품 결제</h1>
                         <ol class="breadcrumb">
-                            <li><a href="${rootPath }/">Home</a></li>
+                            <li><a href="${path }/">Home</a></li>
                             <li class="active">상품 결제</li>
                         </ol>
                     </div>
@@ -32,7 +32,7 @@
     <div class="container contents">
         <div class="container">
             <div class="box_wrap">
-                <form action="${rootPath }/PayProductPro.do" method="post" class="form_row" onsubmit="return payCheck(this)">
+                <form action="${path }/PayProductPro.do" method="post" class="form_row" onsubmit="return payCheck(this)">
                 <table class="table" id="tb1">
                     <thead>
                     <tr>
@@ -131,7 +131,7 @@
                     <%--  일단은 pay했다고 치기  --%>
                     <input type="hidden" name="payCk" id="payCk" value="yes">
                     <input type="submit" id="buy" value="구매" class="btn btn-primary">
-                    <a href="${rootPath }/ProList.do" class="btn btn-primary">제품 목록</a>
+                    <a href="${path }/ProList.do" class="btn btn-primary">제품 목록</a>
                 </form>
 
             </div>

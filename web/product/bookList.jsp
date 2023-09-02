@@ -48,15 +48,15 @@
                     <div class="content">
                         <h1 class="page-name">도서 목록</h1>
                         <ol class="breadcrumb">
-                            <li><a href="${rootPath }/">Home</a></li>
+                            <li><a href="${path }/">Home</a></li>
                             <li class="active relative drop-container">
                                 <span href="#">도서 목록 <i class="fas fa-sort-down" style="vertical-align: 0.125em!important;"></i></span>
                                 <div class="drop">
                                     <ul class="list pl0">
-                                        <li><a class="dropSub" href="${rootPath }/BookList.do?category=*">전체</a></li>
-                                        <li><a class="dropSub" href="${rootPath }/BookList.do?category=A">초등</a></li>
-                                        <li><a class="dropSub" href="${rootPath }/BookList.do?category=B">중등</a></li>
-                                        <li><a class="dropSub" href="${rootPath }/BookList.do?category=C">고등</a></li>
+                                        <li><a class="dropSub" href="${path }/BookList.do?category=*">전체</a></li>
+                                        <li><a class="dropSub" href="${path }/BookList.do?category=A">초등</a></li>
+                                        <li><a class="dropSub" href="${path }/BookList.do?category=B">중등</a></li>
+                                        <li><a class="dropSub" href="${path }/BookList.do?category=C">고등</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -71,11 +71,11 @@
         <div class="container">
             <div class="row">
                 <c:forEach var="book" items="${bookList }" varStatus="status">
-                <a href="${rootPath }/BookGet.do?proNo=${book.proNo }">
+                <a href="${path }/BookGet.do?proNo=${book.proNo }">
                     <div class="col-md-3">
                         <div class="product-item">
                             <div class="product-thumb">
-                                <img class="img-responsive" src="${rootPath }/storage/${book.img }" alt="${book.title }" />
+                                <img class="img-responsive" src="${path }/storage/${book.img }" alt="${book.title }" />
                             </div>
                             <div class="product-content">
                                 <h4><a href="product-single.html">${book.title }</a></h4>

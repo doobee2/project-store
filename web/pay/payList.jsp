@@ -23,8 +23,8 @@
                     <div class="content">
                         <h1 class="page-name">결제내역</h1>
                         <ol class="breadcrumb">
-                            <li><a href="${rootPath }/">Home</a></li>
-                            <li><a href="${rootPath}/CartList.do">장바구니</a></li>
+                            <li><a href="${path }/">Home</a></li>
+                            <li><a href="${path}/CartList.do">장바구니</a></li>
                             <li class="active">결제내역</li>
                         </ol>
                     </div>
@@ -78,13 +78,13 @@
             console.log(payNo)
             if($(this).text()==="0"){
                 $(this).text("배송 전");
-                $(this).next("td").html("<a class='btn btn-primary' href='${rootPath}/Refund.do?payNo="+payNo+"'>결제취소</a>");
+                $(this).next("td").html("<a class='btn btn-primary' href='${path}/Refund.do?payNo="+payNo+"'>결제취소</a>");
             } else if($(this).text()==="1"){
                 $(this).text("배송 중");
-                $(this).next("td").html("<a class='btn btn-primary' href='${rootPath}/Refund.do?payNo="+payNo+"'>반품 신청</a>");
+                $(this).next("td").html("<a class='btn btn-primary' href='${path}/Refund.do?payNo="+payNo+"'>반품 신청</a>");
             } else if($(this).text()==="2"){
                 $(this).text("도착");
-                $(this).next("td").html("<a class='btn btn-primary' href='${rootPath}/Refund.do?payNo="+payNo+"'>반품 신청</a><a class='btn btn-primary' href='${rootPath}/PayConfirm.do?payNo="+payNo+"'>구매 확정</a>");
+                $(this).next("td").html("<a class='btn btn-primary' href='${path}/Refund.do?payNo="+payNo+"'>반품 신청</a><a class='btn btn-primary' href='${path}/PayConfirm.do?payNo="+payNo+"'>구매 확정</a>");
             } else{
                 $(this).text("구매 결정");
                 $(this).next("td").text("");

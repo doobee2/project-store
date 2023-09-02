@@ -1,5 +1,8 @@
 package com.heyedu.controller.pay;
 
+import com.heyedu.dto.Delivery;
+import com.heyedu.dto.Payment;
+import com.heyedu.dto.Product;
 import com.heyedu.model.MultiPattern;
 import com.heyedu.model.ProductDAO;
 import com.heyedu.vo.PayVO;
