@@ -1,9 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
-
 <!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -23,7 +21,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="content">
-                    <h1 class="page-name">Grow&Joy Book 소개</h1>
+                    <h1 class="page-name">Hey Edu 소개</h1>
                     <ol class="breadcrumb">
                         <li><a href="${path }/">Home</a></li>
                         <li class="active">소개</li>
@@ -35,21 +33,23 @@
 </section>
 <div class="container contents text-center">
     <div class="intro text-start" style="margin-top: 20px;">
-        <h3 class="intro_tit">함께, 똑같이 나아가는 교육, 그로우앤조이북</h3>
+        <h3 class="intro_tit">즐거움과 함께 성장하다. Hey Edu</h3>
         <div class="row" style="align-items: center;margin-bottom:20px;">
-            <div class="col-7"><p>그로우앤조이북은 교육의 혁신과 미래를 모색하는 교육 브랜드로서, 학습자들이 풍부한 지식과 창의력을 발전시키며 더 나은 미래를 준비할 수 있도록 돕고 있습니다. 우리는 교육 분야에서 지속적인 혁신과 도전을 통해 학습 경험을 혁신하고, 학생 한 명 한 명의 잠재력을 최대한으로 끌어내는 데 최선을 다하고 있습니다.</p></div>
+            <div class="col-7"><p>
+                헤이에듀는 어린이의 올바른 성장과 학습을 위한 교육 브랜드로,
+                창의력을 자극하고 교육적 가치를 제공하는 도서를 제작하는데 자부심을 가지고 있습니다.
+                다양한 주제와 난이도의 책을 출판하여 어린 독자들의 호기심을 자극하고 지식을 즐겁게 습득할 수 있도록 노력하고 있습니다.
+                저희의 책들은 예술적으로 디자인되어 시각적으로 매력적이며, 독자들의 상상력을 자극하며 긍정적인 가치를 전달합니다.
+                어린이들의 학습과 성장을 지원하고 가정에서도 함께 즐길 수 있는 독서 경험을 제공하는 것이 우리의 목표입니다.
+                함께 어린이들의 미래를 밝게 비추는데 기여하고자 최선을 다하고 있습니다.
+                </p></div>
         </div>
-        <h4 class="intro_tit">그로우앤조이북의 가치</h4>
+        <h4 class="intro_tit">Hey Edu 가치</h4>
         <ol>
-            <li>개인 맞춤 학습: 각 학생은 독특한 학습 요구와 속도를 가지고 있습니다. 우리는 학생 개개인의 특성을 고려하여 맞춤형 학습 계획을 제공하며, 최적의 학습 경로를 찾아갑니다.</li>
-            <li>혁신적인 교육 방법: 그로우앤조이북은 전통적인 교육 방식에만 의존하지 않습니다. 우리는 최신 교육 기술과 혁신적인 학습 방법을 적극적으로 적용하여 학생들이 더욱 효과적으로 학습할 수 있는 환경을 만들어줍니다.</li>
-            <li>전문 교사 팀: 우리의 선생님들은 각각의 전문 분야에서 경험과 전문성을 갖추고 있습니다. 학생들은 우수한 교사들로부터 지식과 영감을 받으며 성장할 수 있습니다.</li>
-            <li>창의적인 미래 준비: 미래는 빠르게 변화하고 있습니다. 그로우앤조이북은 학생들이 문제 해결 능력과 창의력을 기르며 미래의 도전에 대비할 수 있도록 지원합니다.</li>
-        </ol>
-        <h4 class="intro_tit">그로우앤조이북의 서비스</h4>
-        <ol>
-            <li>학습 프로그램: 다양한 학습 분야와 레벨에 맞춰진 학습 프로그램을 제공합니다. 과목별로 커리큘럼을 구성하고, 개인의 학습 수준에 따라 최적의 내용을 제공합니다.</li>
-            <li>온라인 플랫폼: 우리의 온라인 플랫폼을 통해 언제 어디서든 학습할 수 있는 환경을 제공합니다. 온라인 강의, 문제 은행, 학습 자료 등이 제공됩니다.</li>
+            <li>교육적 가치: 우리는 어린이들에게 지식을 전달하고 학습을 촉진하는 책을 제공하여 지적 성장을 지원합니다..</li>
+            <li>창의력과 상상력 촉진: 저희의 도서는 어린이들의 상상력을 자극하고 창의적 사고를 촉구합니다.</li>
+            <li>가족과 함께: 저희의 책은 가정에서도 함께 읽을 수 있는 콘텐츠를 제공하여 가족들 간의 유대감을 강화합니다.</li>
+            <li>미래 지원: 어린이들의 교육과 성장을 지원하고 긍정적인 미래를 모색하는 데 기여하여 사회적 가치를 창출합니다.</li>
             <li>진단 및 평가: 학생의 학습 상황을 정확히 파악하고 지속적으로 평가하여 개인 맞춤 학습을 지원합니다.</li>
         </ol>
     </div>

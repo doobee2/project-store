@@ -25,7 +25,7 @@ public class QnaDAO extends NoticeDAO {
   public List<Qna> getQnaList(){
     conn = db.connect();
     List<Qna> qnaList = new ArrayList<>();
-    String sql = "select * from qna order by par asc";
+    String sql = "select * from qna order by par desc";
 
     try {
       pstmt = conn.prepareStatement(sql);

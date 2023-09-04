@@ -51,8 +51,9 @@
                 </tbody>
             </table>
             <button type="submit">리뷰등록</button>
+
         </form>
-        <a class="btn btn-primary" href="${path }/BookGet.do?proNo=${proNo }" role="button">글 목록</a>
+
     </div>
 
     <%@ include file="../footer.jsp" %>

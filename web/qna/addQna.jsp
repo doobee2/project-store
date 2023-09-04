@@ -45,10 +45,9 @@
                 <div class="col-auto text-right">
                     <button type="submit" class="btn btn-main btn-medium">글 등록</button>
                 </div>
+
             </form>
-            <div class="btn-group text-right" style="margin:20px 0;">
-                <a class="btn btn-main btn-medium" href="${path }/QnaList.do" role="button">글 목록</a>
-            </div>
+
         </div>
     </div>
     <%@ include file="../footer.jsp" %>

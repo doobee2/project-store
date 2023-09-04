@@ -25,8 +25,6 @@ public class MemberDAO {
     public MemberDAO() {
     }
 
-
-
     public boolean loginMember(String id, String pw){
         conn = db.connect();
 
@@ -81,7 +79,14 @@ public class MemberDAO {
                 String decrypt = AES256.decryptAES256(rs.getString("pw"), key);
                 String birth = sdf.format(rs.getDate("birth"));
                 String regdate = sdf.format(rs.getDate("regdate"));
-                memberList.add(new Member(rs.getString("id"), decrypt, rs.getString("name"), rs.getString("email"), rs.getString("tel"), birth, rs.getString("address"), rs.getString("postcode"), regdate, rs.getInt("point")));
+                memberList.add(new Member(
+                        rs.getString("id"), decrypt,
+                        rs.getString("name"),
+                        rs.getString("email"),
+                        rs.getString("tel"), birth,
+                        rs.getString("address"),
+                        rs.getString("postcode"), regdate,
+                        rs.getInt("point")));
             }
 
         } catch (Exception e) {
@@ -107,7 +112,15 @@ public class MemberDAO {
             if(rs.next()){
                 String decrypt = AES256.decryptAES256(rs.getString("pw"), key);
                 String birth = sdf.format(rs.getDate("birth"));
-                member = new Member(rs.getString("id"), decrypt, rs.getString("name"), rs.getString("email"), rs.getString("tel"), birth, rs.getString("address"), rs.getString("postcode"), rs.getString("regdate"), rs.getInt("point"));
+                member = new Member(
+                        rs.getString("id"), decrypt,
+                        rs.getString("name"),
+                        rs.getString("email"),
+                        rs.getString("tel"), birth,
+                        rs.getString("address"),
+                        rs.getString("postcode"),
+                        rs.getString("regdate"),
+                        rs.getInt("point"));
             }
 
         } catch (Exception e) {

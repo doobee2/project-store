@@ -37,14 +37,15 @@
                         SHOP
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">참고서적</a></li>
-                        <li><a class="dropdown-item" href="#">디자인문구</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropSub" href="${path }/BookList.do?category=*">전체</a></li>
+                        <li><a class="dropSub" href="${path }/BookList.do?category=A">초등</a></li>
+                        <li><a class="dropSub" href="${path }/BookList.do?category=B">중등</a></li>
+                        <li><a class="dropSub" href="${path }/BookList.do?category=C">고등</a></li>
+
                     </ul>
                 </li>
-                <li class="nav-item"><a class="nav-link" href="#contact">베스트</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">이벤트</a></li>
+                <li class="nav-item"><a class="nav-link" href="${path }/">베스트</a></li>
+                <li class="nav-item"><a class="nav-link" href="${path }/">이벤트</a></li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         고객센터

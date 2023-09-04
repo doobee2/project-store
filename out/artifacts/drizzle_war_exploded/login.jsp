@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>헤이에듀</title>
+    <title>헤이에듀 로그인</title>
     <c:set var="path" value="<%=request.getContextPath() %>" />
     <%@ include file="/common.jsp"%>
 </head>
@@ -12,26 +12,24 @@
 
     <div class="sidenav">
         <%@ include file="/header.jsp"%>
-    <div class="login-main-text">
-        <h2>Application<br> Login Page</h2>
-        <p>Login or register from here to access.</p>
     </div>
 </div>
 <div class="main">
     <div class="col-md-6 col-sm-12">
         <div class="login-form">
-            <form>
+            <form class="text-left clearfix form_row" action="${path}/LoginPro.do" id="login_form" method="post">
+                <h2 class="text-center">로그인</h2>
                 <div class="form-group">
-                    <label>User Name</label>
-                    <input type="text" class="form-control" placeholder="User Name">
+                    <label>ID</label>
+                    <input class="form-control" type="text" name="id" id="id" placeholder="아이디 입력" autofocus required>
                 </div>
                 <div class="form-group">
-                    <label>Password</label>
-                    <input type="password" class="form-control" placeholder="Password">
+                    <label>PW</label>
+                    <input class="form-control" type="password" name="pw" id="pw"  placeholder="패스워드 입력" required>
                 </div>
-                <button type="submit" class="btn btn-black">Login</button>
-                <button type="submit" class="btn btn-secondary">Register</button>
+                <button type="submit" class="btn btn-secondary">로그인</button>
             </form>
+            <p class="mt-20">회원이 되어 다양한 혜택을 받아보세요!<a href="${path }/member/term.jsp"> <br>회원가입</a></p>
         </div>
     </div>
     <%@ include file="/footer.jsp" %>

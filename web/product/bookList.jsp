@@ -15,27 +15,36 @@
         .page-header .breadcrumb li {position:relative;}
         .product-item {height:400px;margin-bottom:100px;}
         .drop-container {
-            &:hover .drop {
-                display: block;
-            }
-            .drop {
-                display: none;
-                position: absolute;
-                top: 14px;
-                left: 4px;
-                padding:5px;
-                background-color:#f5f5f5;
-                .dropSub {
-                    display: block;
-                    width:56px;
-                    padding: 8px 16px;
-                    box-sizing:border-box;
-                    &:hover {
-                        text-decoration:underline;
-                    }
-                }
-            }
+
+
+        :hover .drop {
+            display: block;
         }
+
+        .drop {
+            display: none;
+            position: absolute;
+            top: 14px;
+            left: 4px;
+            padding: 5px;
+            background-color: #f5f5f5;
+        }
+
+        .dropSub {
+            display: block;
+            width: 56px;
+            padding: 8px 16px;
+            box-sizing: border-box;
+        }
+
+
+        :hover {
+            text-decoration: underline;
+        }
+
+        }
+
+
     </style>
 </head>
 
