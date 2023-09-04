@@ -57,5 +57,5 @@
 ![sequence notice](/README/sequence/project2productpaydelivery.png)
 
 
-## 메인 페이지
+### 메인 페이지
 ![main](/README/main.png)
